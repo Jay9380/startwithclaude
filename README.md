@@ -32,6 +32,7 @@ python3 tools/summarize_stream.py runs/xxx.jsonl   # INIT / TOOL 호출 / ERR / 
 | 9장 컨텍스트 엔지니어링 | [`ch09-context-engineering`](ch09-context-engineering) | 책의 로그 가공(grep\|tail)은 토큰 1/18이지만 에러 종류를 0/3으로 놓치고 "단일 종류"라 단정, 급한 요청이 any 금지를 덮는 사례는 재현 안 됨 — 대신 haiku는 DO NOT EDIT 생성 파일을 규칙이 있어도 15/15 수정(sonnet 0/6), /catchup의 !`git diff` 주입은 Bash 권한 없이도 실행 |
 | 10장 클로드 코드 심화 | [`ch10-advanced`](ch10-advanced) | rules/ 안 파일은 paths 없으면 텍스트 참조여도 시작 시 로드(150줄≈9,900토큰) — 지연 로딩은 paths나 rules 밖, 훅 exit 1은 5/5 통과, if "Bash(rm *)"는 /bin/rm을 놓침, 스킬 description 짧으면 자동 호출 0/3 → 키워드 넣으면 2/3 |
 | 11장 스펙 주도 개발 | [`ch11-sdd`](ch11-sdd) | 한 줄 요청은 3번 모두 다른 저장 경로·형식, C-C-C 체크박스 스펙은 숨은 수용 테스트 7/7을 6/6(산문 5/6), "스펙 먼저 읽어" 한 줄은 읽게만 할 뿐 스펙 갱신 0/3 — 갱신 규칙을 더하면 2/3 |
+| 12장 하네스 엔지니어링 | [`ch12-harness`](ch12-harness) | 책 하네스의 투자 권유 금지 훅: 책 예시 5/5 차단, 바꿔 쓴 표현 0/6 차단, 같은 줄 부정어로 우회 / 자기 검토 vs 새 세션 검토는 --resume의 파일 변경 주입을 걷어 내자 차이 없음(haiku 4회), 대신 둘 다 해석 문장을 needs_fix |
 
 ## 출처
 
