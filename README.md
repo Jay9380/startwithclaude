@@ -31,6 +31,7 @@ python3 tools/summarize_stream.py runs/xxx.jsonl   # INIT / TOOL 호출 / ERR / 
 | 8장 프롬프트 엔지니어링 | [`ch08-prompt-engineering`](ch08-prompt-engineering) | 원샷은 라벨 어휘만 고정(라벨만 출력 0/18) — 형식 지시 한 줄로 18/18, 퓨샷 형식 0→24/24, 다수 레이블 편향은 의미 단서 있는 과제에선 재현 안 됨, 한글 토큰 1.75배 |
 | 9장 컨텍스트 엔지니어링 | [`ch09-context-engineering`](ch09-context-engineering) | 책의 로그 가공(grep\|tail)은 토큰 1/18이지만 에러 종류를 0/3으로 놓치고 "단일 종류"라 단정, 급한 요청이 any 금지를 덮는 사례는 재현 안 됨 — 대신 haiku는 DO NOT EDIT 생성 파일을 규칙이 있어도 15/15 수정(sonnet 0/6), /catchup의 !`git diff` 주입은 Bash 권한 없이도 실행 |
 | 10장 클로드 코드 심화 | [`ch10-advanced`](ch10-advanced) | rules/ 안 파일은 paths 없으면 텍스트 참조여도 시작 시 로드(150줄≈9,900토큰) — 지연 로딩은 paths나 rules 밖, 훅 exit 1은 5/5 통과, if "Bash(rm *)"는 /bin/rm을 놓침, 스킬 description 짧으면 자동 호출 0/3 → 키워드 넣으면 2/3 |
+| 11장 스펙 주도 개발 | [`ch11-sdd`](ch11-sdd) | 한 줄 요청은 3번 모두 다른 저장 경로·형식, C-C-C 체크박스 스펙은 숨은 수용 테스트 7/7을 6/6(산문 5/6), "스펙 먼저 읽어" 한 줄은 읽게만 할 뿐 스펙 갱신 0/3 — 갱신 규칙을 더하면 2/3 |
 
 ## 출처
 
