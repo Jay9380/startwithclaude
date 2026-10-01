@@ -22,6 +22,7 @@ python3 tools/summarize_stream.py runs/xxx.jsonl   # INIT / TOOL 호출 / ERR / 
 | 장 | 폴더 | 확인하는 것 |
 |---|---|---|
 | 1장 바이브 코딩 | [`ch01-vibe-coding`](ch01-vibe-coding) | 모호 vs 구체 프롬프트를 jsdom 기능 테스트로 채점(5/6 vs 6/6), Accept All 4가지 점검 스크립트 |
+| 2장 첫 프로젝트 | [`ch02-first-project`](ch02-first-project) | 자기소개 페이지 — 짧은 요청 2~3/12 vs 디자인 브리프 12/12, 브리프의 틀린 폰트 지시(Google Fonts엔 Pretendard 없음)를 따르고 '완료' 보고 |
 
 ## 출처
 
