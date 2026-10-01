@@ -1,0 +1,5 @@
+{
+  "name": "ch09-override-fixture",
+  "private": true,
+  "devDependencies": { "typescript": "5.9.3" }
+}

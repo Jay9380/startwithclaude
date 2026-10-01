@@ -29,6 +29,7 @@ python3 tools/summarize_stream.py runs/xxx.jsonl   # INIT / TOOL 호출 / ERR / 
 | 6장 숏폼 파이프라인 | [`ch06-shortform`](ch06-shortform) | 리뷰가 지적한 자막 결함(어절 절단·숫자 음차 노출)을 코드·테스트로 고정, 리뷰→수정 루프는 인터페이스가 요구를 담으면 리뷰 없이도 3/3 |
 | 7장 디스코드 자비스 | [`ch07-discord-jarvis`](ch07-discord-jarvis) | 봇과 같은 플래그로 격리 실측 — bypassPermissions에서 cwd 밖 쓰기·/bin/rm·python 삭제 통과, default는 4/4 거부. 경계는 owner·채널 허용 목록 |
 | 8장 프롬프트 엔지니어링 | [`ch08-prompt-engineering`](ch08-prompt-engineering) | 원샷은 라벨 어휘만 고정(라벨만 출력 0/18) — 형식 지시 한 줄로 18/18, 퓨샷 형식 0→24/24, 다수 레이블 편향은 의미 단서 있는 과제에선 재현 안 됨, 한글 토큰 1.75배 |
+| 9장 컨텍스트 엔지니어링 | [`ch09-context-engineering`](ch09-context-engineering) | 책의 로그 가공(grep\|tail)은 토큰 1/18이지만 에러 종류를 0/3으로 놓치고 "단일 종류"라 단정, 급한 요청이 any 금지를 덮는 사례는 재현 안 됨 — 대신 haiku는 DO NOT EDIT 생성 파일을 규칙이 있어도 15/15 수정(sonnet 0/6), /catchup의 !`git diff` 주입은 Bash 권한 없이도 실행 |
 
 ## 출처
 
