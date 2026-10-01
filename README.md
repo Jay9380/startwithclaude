@@ -27,6 +27,7 @@ python3 tools/summarize_stream.py runs/xxx.jsonl   # INIT / TOOL 호출 / ERR / 
 | 4장 OMC | [`ch04-omc`](ch04-omc) | 플러그인을 설치하지 않고 고정 커밋 점검 — v5.6.0은 에이전트 19개(책: 30+), ultrawork 은퇴, git 가드레일은 기본 꺼짐, rm -rf는 OMC 훅이 막지 않음 |
 | 5장 PRD와 플랜 모드 | [`ch05-prd-plan`](ch05-prd-plan) | 플랜 모드는 계획을 ~/.claude/plans/에 쓴다, 수용 기준 보고는 구현 가능 항목 36/36 일치 — 불가능한 기준엔 3회 중 1회 거짓 완료 |
 | 6장 숏폼 파이프라인 | [`ch06-shortform`](ch06-shortform) | 리뷰가 지적한 자막 결함(어절 절단·숫자 음차 노출)을 코드·테스트로 고정, 리뷰→수정 루프는 인터페이스가 요구를 담으면 리뷰 없이도 3/3 |
+| 7장 디스코드 자비스 | [`ch07-discord-jarvis`](ch07-discord-jarvis) | 봇과 같은 플래그로 격리 실측 — bypassPermissions에서 cwd 밖 쓰기·/bin/rm·python 삭제 통과, default는 4/4 거부. 경계는 owner·채널 허용 목록 |
 
 ## 출처
 
