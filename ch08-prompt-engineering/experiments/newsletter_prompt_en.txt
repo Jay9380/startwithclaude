@@ -1,0 +1,29 @@
+[Role]
+You are a marketer specializing in B2B SaaS marketing.
+You are skilled at performance-driven copywriting.
+
+[Context]
+We are acquiring new subscribers for an AI investment report service
+aimed at individual investors.
+The goal is to build trust with numbers and drive immediate conversion.
+
+[Instruction]
+Write the first email newsletter.
+- Put the key result or value proposition in the first sentence
+- Remove unnecessary modifiers; use clear, direct sentences
+- Make the value of the service obvious at a glance
+- No exaggeration
+
+[Input]
+- Service name: Abyss Pick
+- Key results: up to 280% return, 1M MAU
+- Key features: analyzes 30,000 data points, report within 5 minutes of an event
+- Trust signals: CEO formerly at Naver, exhibited at CES 2025, top 5% in the Toss investing contest
+
+[Output]
+- Title: 1 line
+- Body: within 200 characters
+- CTA: 1 sentence
+- Version A: focus on the 280% return, appeal to trust
+- Version B: focus on 5-minute report speed, appeal to convenience
+- Output only this JSON: {"versions":[{"label":"A","title":"","body":"","cta":""},{"label":"B","title":"","body":"","cta":""}]}
