@@ -1,0 +1,23 @@
+diff --git a/src/routes/users.js b/src/routes/users.js
+--- a/src/routes/users.js
++++ b/src/routes/users.js
+@@ -1,12 +1,12 @@
+-const { requireLogin } = require("../auth");
+-router.get("/users/:id", requireLogin, async (req, res) => {
+-  const rows = await db.query("SELECT * FROM users WHERE id = $1", [req.params.id]);
++// const { requireLogin } = require("../auth");
++router.get("/users/:id", async (req, res) => {
++  const rows = await db.query(`SELECT * FROM users WHERE id = ${req.params.id}`);
+   res.json(rows[0]);
+ });
++const API_KEY = "sk-test-abc1234567890";
+diff --git a/package.json b/package.json
+--- a/package.json
++++ b/package.json
+@@ -5,6 +5,7 @@
+   "dependencies": {
+     "express": "^4.19.2",
++    "expresss-validator": "^1.0.0",
+     "pg": "^8.11.0"
+   }
+ }
